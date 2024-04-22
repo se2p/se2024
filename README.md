@@ -32,3 +32,9 @@ Auch wenn diese Vorlesung keine Programmiervorlesung ist, so benoetigen wir
 dennoch ein gewisses Verstaendnis elementarer OOP Konzepte. Das erste Notebook
 enthaelt einfache Beispiele dazu. [Markdown Export](rendered/1%20Einführung%20in%20OOP.md)
 
+
+### 2: Vorlesung vom 22.4.2024: Versionsverwaltung mit Git
+
+Softwareentwicklung ohne Versionsverwaltung ist undenkbar, und in dieser
+Vorlesung beschaeftigen wir uns mit dem verteilten Versionsverwaltungssystem
+Git. Das Notebook betrachtet die Verwendung von Git an der Kommandozeile. [Markdown Export](rendered/2%20Versionskontrolle.md)
