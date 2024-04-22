@@ -1,0 +1,11 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Car {
+ -price: int
+ -location: String
+ +Car(int, String)
+ +getPrice(): int
+ +getLocation(): String
+}
+@enduml

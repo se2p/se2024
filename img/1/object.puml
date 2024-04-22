@@ -1,0 +1,17 @@
+@startuml
+object "car1: Car" as o1 {
+  value = 100
+  location = "Passau"
+}
+
+object "car2: Car" as o2 {
+  value = 200
+  location = "München"
+}
+
+object "car3: Car" as o3 {
+  value = 100
+  location = "Passau"
+}
+
+@enduml

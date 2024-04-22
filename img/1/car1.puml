@@ -1,0 +1,14 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Sellable {
+  + getPrice(): int
+}
+
+class Car {
+ +getPrice(): int
+}
+
+Sellable <|.. Car
+
+@enduml

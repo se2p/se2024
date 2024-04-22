@@ -1,0 +1,17 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Person {
+ #name: String
+ #age: int
+ +Person(name,age)
+ +increaseAge()
+}
+
+class Employee {
+ -salary: int
+ +increaseSalary()
+}
+
+Person <|-- Employee
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+abstract class Graphic {
+ -origin: Point
+ + getOrigin(): Point
+ + {abstract} getArea(): double
+}
+
+class Rectangle {
+ -length: int
+ -width: int
+ +Rectangle(int length, int width)
+ +getArea(): double
+}
+
+class Circle {
+  -radius: int
+  +Circle(int radius)
+  +getArea(): double
+}
+
+Graphic <|-- Rectangle
+Graphic <|-- Circle
+
+@enduml
