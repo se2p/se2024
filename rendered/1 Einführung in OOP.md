@@ -12,7 +12,7 @@ UML ist die _Unified Modeling Language_, und bezeichnet eine Reihe von Diagramme
 
 Als Beispiel verwenden wir eine Klasse für ein Auto (`Car`), als Teil eines Online-Verkaufssystems. Dazu braucht ein `Car` Attribute wie `price` oder `location`, die den Zustand eines Objektes definieren. Zur Interaktion soll die Klasse eine Schnittstelle durch Methoden `getPrice` und `getLocation` bieten. Diese Klasse wird durch das folgende Klassendiagramm beschrieben:
 
-![Car class diagram](img/1/car.png)
+![Car class diagram](../img/1/car.png)
 
 Wir verwenden [PlantUML](https://plantuml.com/) um UML Diagramme zu erzeugen. Wir werden PlantUML noch genauer vorstellen wenn wir im Laufe der Vorlesung dann eigene UML Diagramme erstellen.
 
@@ -227,7 +227,7 @@ car1.equals(car3)
 
 Der Zusammenhang der Objekt kann auch in einem UML _Objektdiagramm_ erkannt werden. Ein UML Objektdiagramm ist sehr ähnlich zu einem Klassendiagramm und verwendet die gleiche Notation, aber es zeigt konkrete Objekte und deren Attributwerte. Objektdiagramme werden hauptsächlich verwendet um Beispiele zu Klassendiagrammen zum besseren Verständnis zu zeigen.
 
-![Object diagram](img/1/object.png)
+![Object diagram](../img/1/object.png)
 
 (Die UML Diagramme in dieser Vorlesung sind allgemein wenig komplex da wir Assoziationen zwischen Klassen noch nicht betrachten; dies kommt in einer späteren Vorlesung).
 
@@ -351,7 +351,7 @@ p
 
 Wir definieren nun eine Unterklasse `Employee`, diese erbt die Attribute und Methoden der Superklasse `Person`, aber kann neue Attribute und Methoden definieren. Im UML-Klassendiagramm wird die Vererbungsbeziehung wie folgt dargestellt:
 
-![Person and Employee class extension](img/1/person.png)
+![Person and Employee class extension](../img/1/person.png)
 
 In Java implementiert sieht die Unterklasse `Employee` so aus:
 
@@ -436,7 +436,7 @@ Das `Employee` Beispiel zeigte, wie Vererbung verwendet wird zur _Spezialisierun
 
 Als Beispiel betrachten wir Klassen für graphische Formen, als Teil eines hypothetischen Systems mit dem wir diese am Computer darstellen können. Alle Formen teilen gewisse Eigenschaften, beispielsweise dass sie innerhalb der Darstellungsfläche einen Ursprung (`origina`) haben. Jede Form soll auch eine Möglichkeit haben die Fläche zu berechnen (`getArea`), allerdings ist diese Berechnung natürlich für unterschiedliche Realisierungen der Formen verschieden. Wir definieren die gemeinsamen Attribute (`origin`) und die gemeinsamen Schnittstellen (`getArea`) in einer abstrakten Klasse `Graphic`. Die Implementierung der abstrakten Methode `getArea` erfolgt dann in den konkreten Unterklassen `Rectangle` und `Circle`.
 
-![Graphic inheritance hierarchy](img/1/graphic.png)
+![Graphic inheritance hierarchy](../img/1/graphic.png)
 
 
 ```Java
@@ -629,7 +629,7 @@ exampleMethod(g2)
 
 Ein wichtiges Konzept bei der Vererbung und Polymorphie ist die Unterscheidung zwischen _Overloading_ und _Overriding_. Betrachten wir die folgende Vererbungshierarchie: Eine `Person` (abstrakte Klasse) definiert Schnittstellen um das Gehalt (`salary`) abzufragen und zu ändern. Das Gehalt wird unterschiedlich berechnet je nachdem ob die Person selbständig ist (`SelfEmployed`), ein regulärer Angestellter ist (`Employee`), oder ein Angestellter mit Personalverantwortung ist (`Boss`).
 
-![Overloading vs overriding class diagram](img/1/person2.png)
+![Overloading vs overriding class diagram](../img/1/person2.png)
 
 
 ```Java
@@ -825,7 +825,7 @@ Neben der klassischen Vererbung abstrakter Klassen bietet Java auch die Möglich
 
 Interfaces erlauben unterschiedliche Sichten auf Objekte für verschiedene Anwendungszwecke. Man erkennt dies meist in der Benennung: Interfaces haben oft Namen die Eigenschaften beschreiben und in `-able` enden, während abstrakte Klassen eher mit Substantiven benannt werden.
 
-![Interface class diagram](img/1/car1.png)
+![Interface class diagram](../img/1/car1.png)
 
 
 ```Java
@@ -862,7 +862,7 @@ c.getPrice()
 
 Eine Klasse kann immer nur von einer Superklasse erben (`extends`); eine Klasse kann aber mehrere Interfaces implementieren (`implements`). Wir können beispielsweise unsere `Car` Klasse nicht nur `Sellable` machen, sondern auch `Moveable`:
 
-![Interface class diagram](img/1/car2.png)
+![Interface class diagram](../img/1/car2.png)
 
 
 ```Java
