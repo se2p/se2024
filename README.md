@@ -38,3 +38,10 @@ enthaelt einfache Beispiele dazu. [Markdown Export](rendered/1%20Einführung%20i
 Softwareentwicklung ohne Versionsverwaltung ist undenkbar, und in dieser
 Vorlesung beschaeftigen wir uns mit dem verteilten Versionsverwaltungssystem
 Git. Das Notebook betrachtet die Verwendung von Git an der Kommandozeile. [Markdown Export](rendered/2%20Versionskontrolle.md)
+
+
+### 3: Vorlesung vom 29.4.2024: Testen mit JUnit
+
+Das Testen ist eine der wichtigsten Methoden um die Qualitaet von Sourcecode
+sicherzustellen. In diesem Notebook sind die Beispiele aus der Vorlesung
+rund um das JUnit 4 Test-Framework fuer Java gesammelt. [Markdown Export](rendered/3%20Testen.md)
